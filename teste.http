@@ -1,0 +1,29 @@
+@baseUrl = http://localhost:3000
+
+###
+# Criar contato
+POST {{baseUrl}}/contatos
+Content-Type: application/json
+
+{
+  "nome": "Joao Silva",
+  "telefone": "84999999999"
+}
+
+###
+# Listar contatos
+GET {{baseUrl}}/contatos
+
+###
+# Atualizar contato
+PATCH {{baseUrl}}/contatos/1
+Content-Type: application/json
+
+{
+  "nome": "Joao Pereira",
+  "telefone": "84988888888"
+}
+
+###
+# Deletar contato
+DELETE {{baseUrl}}/contatos/1
